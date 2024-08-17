@@ -23,6 +23,10 @@ const MovieIdPage = async ({searchParams}: any) => {
                     className={styles.idImg}
                 />
 
+                <div>Runtime: {movieById.runtime}</div>
+
+                <div>Release Date: {movieById.release_date}</div>
+
                 <div className={styles.idGenre}>
                     <div className={styles.idGenreTitle}>
                         Genres:

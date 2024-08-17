@@ -34,8 +34,8 @@ const HomeComponent = () => {
                     className={styles.searchInput}
                     value={query}
                     onChange={
-                    (event) =>
-                        setQuery(event.target.value)}
+                        (event) =>
+                            setQuery(event.target.value)}
                 />
 
                 <button
@@ -48,13 +48,15 @@ const HomeComponent = () => {
 
             <div className={styles.searchMovieDiv}>
                 {
-                    movies?.map(movie =>
-                        <Link key={movie.id}
-                              href={{pathname: '/movie' + '/' + movie.id, query: {data: JSON.stringify(movie.id)}}}
-                        className={styles.movieLink}
-                        >
-                            {movie.name}
-                        </Link>)
+                    !movies
+                        ? <div><h1>Error</h1></div>
+                        : movies?.map(movie =>
+                            <Link key={movie.id}
+                                  href={{pathname: '/movie' + '/' + movie.id, query: {data: JSON.stringify(movie.id)}}}
+                                  className={styles.movieLink}
+                            >
+                                {movie.name}
+                            </Link>)
                 }
             </div>
         </div>
