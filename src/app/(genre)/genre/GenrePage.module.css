@@ -1,0 +1,21 @@
+.mainGenre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.linkGenre {
+    padding: 10px;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+
+.linkGenre:hover {
+    color: darkslategray;
+    background-color: white;
+    border: 1px darkslategray solid;
+}

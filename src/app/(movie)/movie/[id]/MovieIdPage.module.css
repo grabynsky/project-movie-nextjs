@@ -1,0 +1,45 @@
+.idMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.idImg {
+    width: 300px;
+}
+
+.idTitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.idDescription {
+    display: flex;
+    width: 300px;
+
+}
+
+.idGenre {
+    display: flex;
+    height: 100px;
+
+}
+
+.idGenreTitle {
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.idGenreName{
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+.idGenreName:hover{
+    border-bottom: 1px black solid;
+}

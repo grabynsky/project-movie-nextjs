@@ -1,0 +1,23 @@
+.pgnMain{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+.pgnBtn{
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: darkslategray;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: darkslategray;
+    font-size: 20px;
+}

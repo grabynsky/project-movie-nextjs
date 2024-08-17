@@ -1,0 +1,35 @@
+.mainHeader {
+    width: var(--width);
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6ca4a4;
+    border-radius: 10px;
+}
+
+.headerLink {
+    text-decoration: none;
+    background-color: darkslategray;
+    color: white;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.headerLink:hover {
+    color: darkslategray;
+    background-color: white;
+}
+
+.headerLinkImg {
+    width: 40px;
+
+}
+
+.headerLinkImg:hover {
+    background-color: darkslategray;
+    border-radius: 10px;
+}

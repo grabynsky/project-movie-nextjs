@@ -1,0 +1,25 @@
+.divMain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.IdPageImg {
+    width: 200px;
+}
+
+.divTitle {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.idPageLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkslategray;
+}

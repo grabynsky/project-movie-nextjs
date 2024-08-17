@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkslategray;
+    border: 1px darkslategray solid;
+    padding: 100px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.input {
+    width: 180px;
+    border: none;
+    outline: none;
+    border-bottom: 1px darkslategray solid;
+    color: darkslategray;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.input::placeholder {
+    font-weight: 200;
+    color: darkslategray;
+}
+
+.btn {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    background-color: darkslategray;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
