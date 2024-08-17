@@ -1,0 +1,57 @@
+.h2Home {
+    margin-bottom: 60px;
+}
+
+.labelHome {
+    width: 200px;
+    border: 1px darkslategray solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    border-bottom: 1px darkslategray solid;
+    padding: 5px;
+    font-size: 16px;
+
+
+}
+
+.btn {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: darkslategray;
+    border: 1px darkslategray solid;
+}
+
+.searchMovieDiv {
+    width: 200px;
+   text-align: center;
+}
+
+.movieLink {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.movieLink:hover{
+    font-weight: 500;
+}
