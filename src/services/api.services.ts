@@ -36,3 +36,7 @@ export const getGenres = {
             .then(response => response.json())
     }
 }
+export const getSearchMovies = async (input:string) => {
+    return await fetch(urls.searchMovies + input, options)
+        .then(response => response.json())
+}

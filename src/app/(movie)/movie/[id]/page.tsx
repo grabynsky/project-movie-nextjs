@@ -6,7 +6,8 @@ import Link from "next/link";
 
 const MovieIdPage = async ({searchParams}: any) => {
 
-    const byId = JSON.parse(searchParams.data)
+    // const byId = JSON.parse(searchParams.data)
+    const byId = searchParams.data
 
     const movieById = await getMovies.getMovieById(byId);
 

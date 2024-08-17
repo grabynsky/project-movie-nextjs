@@ -24,18 +24,16 @@ const PaginationComponent: FC<IProps> = ({page}) => {
 
     const increment = (num: number) => {
         num++;
-        setCurrentPage(num)
 
-        return currentPage;
+        return setCurrentPage(num);
     }
 
     const decrement = (num: number) => {
         if (num > 1) {
             num--;
-            setCurrentPage(num)
         }
 
-        return currentPage;
+        return setCurrentPage(num);
     }
 
     return (
