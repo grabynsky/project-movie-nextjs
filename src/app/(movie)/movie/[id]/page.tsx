@@ -3,6 +3,7 @@ import {getMovies} from "@/services/api.services";
 import {urls} from "@/constants/urls";
 import styles from "./MovieIdPage.module.css";
 import Link from "next/link";
+import StarComponent from '@/components/Stars/StarComponent';
 
 const MovieIdPage = async ({searchParams}: any) => {
 
@@ -25,6 +26,8 @@ const MovieIdPage = async ({searchParams}: any) => {
 
                 <div>
                     <div className={styles.runtime}><b>Runtime:</b> {movieById.runtime}</div>
+
+                    <div className={styles.budget}><b>Runtime:</b> $ {movieById.budget}</div>
 
                     <div className={styles.releaseDate}><b>Release Date:</b> {movieById.release_date}</div>
 
@@ -54,9 +57,9 @@ const MovieIdPage = async ({searchParams}: any) => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+            <StarComponent ratingNum={movieById.popularity}/>
 
             <div className={styles.overview}>
                 {movieById.overview}
