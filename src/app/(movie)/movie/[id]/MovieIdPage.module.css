@@ -9,6 +9,12 @@
 .idImg {
     width: 300px;
 }
+.runtime, .releaseDate {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 .idTitle {
     font-size: 20px;
@@ -42,4 +48,10 @@
 
 .idGenreName:hover{
     border-bottom: 1px black solid;
+}
+.overview {
+    width: 400px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
 }

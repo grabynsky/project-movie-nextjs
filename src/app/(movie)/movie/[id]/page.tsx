@@ -23,36 +23,43 @@ const MovieIdPage = async ({searchParams}: any) => {
                     className={styles.idImg}
                 />
 
-                <div>Runtime: {movieById.runtime}</div>
+                <div>
+                    <div className={styles.runtime}><b>Runtime:</b> {movieById.runtime}</div>
 
-                <div>Release Date: {movieById.release_date}</div>
+                    <div className={styles.releaseDate}><b>Release Date:</b> {movieById.release_date}</div>
 
-                <div className={styles.idGenre}>
-                    <div className={styles.idGenreTitle}>
-                        Genres:
-                    </div>
-                    <div>
-                        {
-                            movieById.genres.map(
-                                (genre, index) =>
-                                    <div
-                                        key={index}
+                    <div className={styles.idGenre}>
+                        <div className={styles.idGenreTitle}>
+                            Genres:
+                        </div>
+                        <div>
+                            {
+                                movieById.genres.map(
+                                    (genre, index) =>
+                                        <div
+                                            key={index}
 
-                                    >
-                                        <Link href={{
-                                            pathname: '/genre' + '/' + genre.id,
-                                            query: {data: JSON.stringify(genre.id)}
-                                        }}
-                                              className={styles.idGenreName}
                                         >
-                                            <span className={styles.idGenreName}>{genre.name}</span>
+                                            <Link href={{
+                                                pathname: '/genre' + '/' + genre.id,
+                                                query: {data: JSON.stringify(genre.id)}
+                                            }}
+                                                  className={styles.idGenreName}
+                                            >
+                                                <span className={styles.idGenreName}>{genre.name}</span>
 
-                                        </Link>
-                                    </div>)
-                        }
+                                            </Link>
+                                        </div>)
+                            }
+                        </div>
                     </div>
                 </div>
 
+
+            </div>
+
+            <div className={styles.overview}>
+                {movieById.overview}
             </div>
 
         </main>
