@@ -66,8 +66,6 @@ const MovieIdPage = async ({searchParams}: any) => {
             </div>
 
         </main>
-
-
     );
 };
 
