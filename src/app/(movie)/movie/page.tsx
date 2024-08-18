@@ -16,7 +16,6 @@ const MoviePage = async ({searchParams}: any) => {
         getAllMovie = await getMovies.getAllMovies(searchParams.page);
     }
 
-    // const  getAllMovie = await getMovies.getAllMovies(1);
 
         const allMovie = getAllMovie.results;
 
