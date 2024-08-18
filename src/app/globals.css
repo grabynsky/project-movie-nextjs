@@ -4,9 +4,16 @@
     --width: 960px
 }
 
-body {
+.bodyLight {
     width: var(--width);
     margin: 0 auto;
+    background-color: white;
+}
+
+.bodyDark {
+    width: var(--width);
+    margin: 0 auto;
+    background-color: darkslategray;
 }
 
 * {

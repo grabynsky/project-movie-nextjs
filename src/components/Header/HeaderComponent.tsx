@@ -1,8 +1,13 @@
-import React from 'react';
+'use client'
+
+import React, {useContext, useEffect, useState} from 'react';
 import Link from "next/link";
 import style from "./Header.module.css";
+import {MyContext, useContextProvider} from '@/contex/ContexProvider';
 
 const HeaderComponent = () => {
+
+
     return (
         <main className={style.mainHeader}>
             <Link className={style.headerLink} href={'/'}>Home</Link>
@@ -15,7 +20,6 @@ const HeaderComponent = () => {
                     className={style.headerLinkImg}
                 />
             </Link>
-
         </main>
     );
 };

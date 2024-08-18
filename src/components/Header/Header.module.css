@@ -1,3 +1,4 @@
+
 .mainHeader {
     width: var(--width);
     height: 100px;
@@ -19,9 +20,24 @@
     text-transform: uppercase;
 }
 
+.headerLinkDark {
+    text-decoration: none;
+    background-color: white;
+    color: darkslategray;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
 .headerLink:hover {
     color: darkslategray;
     background-color: white;
+}
+
+.headerLinkDark:hover{
+    color: white;
+    background-color: darkslategray;
 }
 
 .headerLinkImg {
